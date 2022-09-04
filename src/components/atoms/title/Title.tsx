@@ -1,7 +1,8 @@
 import React from 'react'
+import { ITitleProps } from '../../../interfaces/atoms-interfaces';
 
-export const Title = () => {
+export const Title = ({text}:ITitleProps) => {
   return (
-    <div>Title</div>
+    <h1>{text}</h1>
   )
 }

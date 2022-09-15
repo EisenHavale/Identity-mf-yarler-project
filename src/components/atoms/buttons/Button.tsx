@@ -1,7 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { IButtonProps } from '../../../interfaces/atoms-interfaces'
+import { Button as MButton } from '@mui/material';
 
-export const Button = () => {
+export const Button = ({label, disabled=false, color='primary', type='contained', onClick, icon}:IButtonProps) => {
   return (
-    <div>Button</div>
+    <MButton
+      variant={type}
+      color={color}
+      disabled={disabled}
+      onClick={onClick}
+      startIcon={icon}
+    >
+      {label}
+    </MButton>
   )
 }

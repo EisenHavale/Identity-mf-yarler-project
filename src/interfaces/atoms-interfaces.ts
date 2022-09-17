@@ -1,6 +1,4 @@
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
-import { SvgIcon } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
 
 export interface ITitleProps {
     text: string;
@@ -11,19 +9,25 @@ export interface ITitleProps {
 type ColorType = 'primary' | 'secondary' | 'info' | 'warning' | 'inherit' | 'success';
 type ButtonType = 'contained' | 'outlined';
 type Icon = ReactJSXElement;
+type InputType = 'text' | 'number' | 'password' | 'email';
 
 export interface IButtonProps {
     label: string;
     disabled?: boolean;
     color: ColorType;
     icon?:Icon;
-    type?: ButtonType;
+    shape?: ButtonType;
+    type?: 'submit' | 'button';
     onClick?: () => void;
 }
 
 export interface IInputProps {
     label: string;
-    onChange?: (value: string) => void;
+    name: string;
+    value: string;
+    onChange: (e:React.ChangeEvent<any>) => void;
+    type?: InputType;
     icon?: ReactJSXElement;
+    id?: string;
 
 }

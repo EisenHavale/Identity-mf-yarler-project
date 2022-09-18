@@ -1,17 +1,17 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { LoginForm } from "./components/organismos/form/LoginForm";
-
+import {BrowserRouter} from 'react-router-dom'
 import "./index.css";
+import IdentityRoutes from "./routes/Identity.routes";
 
     
 
 const App = () => {
 return (
-    <div className="container">
-      <LoginForm />      
-    </div>
+    <BrowserRouter>
+      <IdentityRoutes />
+    </BrowserRouter>
 );
 }
 ReactDOM.render(<App />, document.getElementById("app"));

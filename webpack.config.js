@@ -41,7 +41,7 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "IdentityRoutes",
+      name: "Identity",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {

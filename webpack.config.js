@@ -44,7 +44,9 @@ module.exports = {
       name: "y",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './IdentityRoutes':'./src/routes/Identity.routes'
+      },
       shared: {
         ...deps,
         react: {
@@ -55,6 +57,9 @@ module.exports = {
           singleton: true,
           requiredVersion: deps["react-dom"],
         },
+        "react-router-dom": {
+          singleton: true,
+        }
       },
     }),
     new HtmlWebPackPlugin({

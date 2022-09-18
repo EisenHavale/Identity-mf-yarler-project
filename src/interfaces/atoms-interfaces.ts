@@ -25,7 +25,7 @@ export interface IInputProps {
     label: string;
     name: string;
     value: string;
-    onChange: (e:React.ChangeEvent<any>) => void;
+    onChange: (e:React.ChangeEvent) => void;
     type?: InputType;
     icon?: ReactJSXElement;
     id?: string;

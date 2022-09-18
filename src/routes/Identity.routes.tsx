@@ -8,7 +8,7 @@ const IdentityRoutes = ()=>{
     return (
         <Suspense fallback='Loading'>
             <Routes>
-                <Route path='*' element={<Login />} />
+                <Route path='/' element={<Login />} />
                 <Route path='forgot-password' element={<ForgotPassword />} />
             </Routes>
         </Suspense>

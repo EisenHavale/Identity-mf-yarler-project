@@ -4,6 +4,6 @@ import { IInputProps } from '../../../interfaces/atoms-interfaces';
 
 export const Input = ({label, type, onChange, name, id, value}: IInputProps) => {
   return (
-    <TextField label={label} type={type} onChange={onChange} name={name} id={id} />
+    <TextField label={label} type={type} onChange={onChange} name={name} id={id} fullWidth={true} sx={{margin:'10px'}} />
   )
 }

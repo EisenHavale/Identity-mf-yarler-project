@@ -6,7 +6,7 @@ export interface ITitleProps {
     color?: ColorType;
 }
 
-type ColorType = 'primary' | 'secondary' | 'info' | 'warning' | 'inherit' | 'success';
+type ColorType = 'primary' | 'secondary' | 'info' | 'warning' | 'inherit' | 'success' | 'error';
 type ButtonType = 'contained' | 'outlined';
 type Icon = ReactJSXElement;
 type InputType = 'text' | 'number' | 'password' | 'email';
@@ -14,7 +14,7 @@ type InputType = 'text' | 'number' | 'password' | 'email';
 export interface IButtonProps {
     label: string;
     disabled?: boolean;
-    color: ColorType;
+    color?: ColorType;
     icon?:Icon;
     shape?: ButtonType;
     type?: 'submit' | 'button';

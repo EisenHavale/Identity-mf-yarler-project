@@ -6,7 +6,7 @@ import { Title } from '../../components/atoms/title/Title';
 
 export const Login = () => {
   return (
-    <Grid container direction='column' xs={12} alignItems="center">
+    <Grid container item direction='column' xs={12} alignItems="center">
       <Title text='Moly My new App' />
       <Divider />
         <LoginForm />

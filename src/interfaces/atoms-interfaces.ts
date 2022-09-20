@@ -29,5 +29,10 @@ export interface IInputProps {
     type?: InputType;
     icon?: ReactJSXElement;
     id?: string;
+}
 
+export interface ILinkProps {
+    path:string;
+    label:string;
+    color?:string;
 }

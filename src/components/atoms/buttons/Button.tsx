@@ -12,6 +12,7 @@ export const Button = ({label, disabled=false, color='primary', shape='contained
       onClick={onClick}
       startIcon={icon}
       type={type}
+      sx={{width:'100%', margin:'5px'}}
     >
       {label}
     </MButton>

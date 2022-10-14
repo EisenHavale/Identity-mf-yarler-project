@@ -26,13 +26,21 @@ export interface IInputProps {
     name: string;
     value: string;
     onChange: (e:React.ChangeEvent) => void;
+    onBlur?: (e:React.FocusEvent) => void;
+    error: boolean;
     type?: InputType;
     icon?: ReactJSXElement;
     id?: string;
+    errorText?: string;
 }
 
 export interface ILinkProps {
     path:string;
     label:string;
     color?:string;
+}
+
+export interface ILoginFormValues {
+    username:string;
+    password:string;
 }

@@ -9,7 +9,7 @@ import { Button } from "../../../atoms/buttons/Button";
 import './login-form.css'
 import { Link } from "../../../atoms/link/Link";
 import { ILoginFormValues } from '../../../../interfaces/atoms-interfaces';
-import { validate } from '../../../../helpers/loginValidation';
+import { validate } from '../helpers/loginValidation';
 
 
 export const LoginForm = ()=>{
@@ -43,6 +43,7 @@ export const LoginForm = ()=>{
                     onBlur={formik.handleBlur} //? Is it useful
                     error={formik.touched.username && formik.errors.username != '' ? true : false}
                     errorText={formik.errors.username}
+                    color='info'
                 />
                 <Input 
                     label="Password" 
@@ -54,14 +55,15 @@ export const LoginForm = ()=>{
                     id="password"
                     error={formik.touched.password && formik.errors.password != '' ? true : false}
                     errorText={formik.errors.password}
+                    color='info'
                 />
                 <Button shape="contained" color='info' label="Login" icon={<LoginIcon />} type='submit' />
-                <Link label="Forgot password?" path="forgot-password"/>
+                <Link color="info" label="Forgot password?" path="identity/forgot-password"/>
             </Box>
-            <Divider variant="fullWidth" sx={{color:'#000', margin:'10px'}} color='#000' light={false}>  <Chip label="Quick Access" /> </Divider>
+            <Divider variant="fullWidth" sx={{color:'#000', margin:'10px'}} color='#000' light={false}>  <Chip color="info" label="Quick Access" /> </Divider>
             <Box sx={{width:'100%', display:'flex', flexDirection:'column', alignItems:'center'}} >
-                <Button shape="outlined" color='error' label="Google" icon={<GoogleIcon />} type='submit' />
-                <Button shape="outlined" color='primary' label="Facebook" icon={<FacebookIcon />} type='submit' />
+                <Button shape="contained" color='error' label="Google" icon={<GoogleIcon />} type='submit' />
+                <Button shape="contained" color='primary' label="Facebook" icon={<FacebookIcon />} type='submit' />
             </Box>
         </form>
     )

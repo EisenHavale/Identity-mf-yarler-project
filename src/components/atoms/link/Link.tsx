@@ -4,7 +4,7 @@ import { ILinkProps } from '../../../interfaces/atoms-interfaces';
 
 export const Link = (props: ILinkProps) => {
     return (
-      <MLink href={props.path} color='primary' sx={{margin:'10px'}} > {props.label} </MLink>
+      <MLink href={props.path} sx={{margin:'10px', color:'#fff'}} > {props.label} </MLink>
     )
 
 }

@@ -6,7 +6,7 @@ import { Box } from '@mui/material';
 import { Input } from "../../../atoms/inputs/Input";
 import { Button } from "../../../atoms/buttons/Button";
 import { ILoginFormValues } from '../../../../interfaces/atoms-interfaces';
-import { validate } from '../../../../helpers/loginValidation';
+import { validate } from '../helpers/loginValidation';
 
 
 export const ForgotPasswordForm = ()=>{
@@ -39,6 +39,7 @@ export const ForgotPasswordForm = ()=>{
                     onBlur={formik.handleBlur} //? Is it useful
                     error={formik.touched.username && formik.errors.username != '' ? true : false}
                     errorText={formik.errors.username}
+                    color='primary'
                 />
                 <Button shape="contained" color='info' label="Send" icon={<LoginIcon />} type='submit' />
             </Box>

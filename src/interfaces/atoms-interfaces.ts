@@ -6,7 +6,7 @@ export interface ITitleProps {
     color?: ColorType;
 }
 
-type ColorType = 'primary' | 'secondary' | 'info' | 'warning' | 'inherit' | 'success' | 'error';
+type ColorType = 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning'
 type ButtonType = 'contained' | 'outlined';
 type Icon = ReactJSXElement;
 type InputType = 'text' | 'number' | 'password' | 'email';
@@ -32,6 +32,7 @@ export interface IInputProps {
     icon?: ReactJSXElement;
     id?: string;
     errorText?: string;
+    color:ColorType;
 }
 
 export interface ILinkProps {
@@ -44,3 +45,4 @@ export interface ILoginFormValues {
     username:string;
     password:string;
 }
+

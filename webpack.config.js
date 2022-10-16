@@ -47,7 +47,7 @@ module.exports = {
         Dashboard:"Dashboard@http://localhost:8081/remoteEntry.js"
       },
       exposes: {
-        './IdentityRoutes':'./src/routes/Identity.routes'
+        './IdentityRoutes':'./src/routes/Identity.routes',
       },
       shared: {
         ...deps,

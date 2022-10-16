@@ -1,0 +1,21 @@
+.light{
+    color: #fff;
+}
+
+.dark{
+ color:#000;
+}
+
+.lightText{
+    border-color: #fff;
+    color: #fff;
+}
+.lightText:focus{
+    border-color: #fff;
+    color: #fff;
+}
+
+.lightText:active{
+    border-color: #fff;
+    color: #fff;    
+}

@@ -18,6 +18,7 @@ export interface IButtonProps {
     icon?:Icon;
     shape?: ButtonType;
     type?: 'submit' | 'button';
+    name?:string;
     onClick?: () => void;
 }
 

@@ -9,7 +9,7 @@ export interface ITitleProps {
 type ColorType = 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning'
 type ButtonType = 'contained' | 'outlined';
 type Icon = ReactJSXElement;
-type InputType = 'text' | 'number' | 'password' | 'email';
+type InputType = 'text' | 'number' | 'password' | 'select';
 
 export interface IButtonProps {
     label: string;
@@ -18,6 +18,7 @@ export interface IButtonProps {
     icon?:Icon;
     shape?: ButtonType;
     type?: 'submit' | 'button';
+    name?:string;
     onClick?: () => void;
 }
 
